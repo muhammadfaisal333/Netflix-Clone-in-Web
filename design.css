@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.mainBackground {
+    background-image: url(/images/bg.jpg);
+    height: 70vh;
+}
+
+.mainBackground .boxLayer {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.8;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+nav img {
+    position: relative;
+    width: 130px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.topContent {
+    font-family: "Martel Sans", sans-serif;
+    height: 65%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 18px;
+    padding: 25px;
+}
+
+.topContent> :nth-child(1) {
+    /**Agr hum imediate > nhi lgay gain to is ka andr ka content hamaray top class ka 
+                                    har parent ka frist child pr apply ho jay ga**/
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.topContent> :nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.topContent> :nth-child(3) {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.separationLine {
+    height: 5px;
+    background-color: rgb(46, 44, 44);
+}
+
+.btn-red-sign {
+    padding: 8px 15px;
+    background-color: rgba(255, 0, 0, 0.909);
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-red-start {
+    padding: 11px 10px;
+    background-color: rgba(255, 0, 0, 0.909);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btnHover:hover {
+    background-color: rgba(255, 0, 0, 0.756);
+}
+
+.searchBar {
+    padding: 13px 94px 12px 7px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.searchButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+}
+
+.Section video {
+    width: 30vw;
+    border-radius: 50px;
+}
+
+.Section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 0px;
+}
+
+.Section>div :first-child {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.firstSection video{
+    width: 275px;
+}
+.Section>div :nth-child(2) {
+    font-size: 15px;
+}
+
+.thirdSection>div {
+    padding: 10px;
+}
+
+.forthSection>div {
+    padding: 10px;
+}
+
+.queSection>h2 {
+    color: white;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.queBox {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 8px auto;
+    background-color: rgba(128, 128, 128, 0.311);
+    padding: 18px;
+    max-width: 50vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.queBox:hover {
+    background-color: rgba(128, 128, 128, 0.445);
+}
+
+.bottomBar {
+    color: white;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.bottomContent {
+    color: rgba(255, 255, 255, 0.678);
+    max-width: 60vw;
+    margin: auto;
+}
+
+.bottomContent .question {
+    padding: 50px 0px 30px;
+}
+
+.bottomLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 40px;
+}
+
+.listItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listItems a {
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 14px;
+}
+
+.languageSelect {
+    padding-bottom: 50px;
+}
+
+.languageSelect select {
+    background-color: rgba(248, 243, 243, 0.021);
+    color: white;
+    padding: 3px 12px 3px 8px;
+    border-radius: 3px;
+}
+
+.languageSelect option {
+    background-color: black;
+}
+
+.lastText {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 920px) {
+    .Section{
+        flex-wrap: wrap ;
+    }
+    .Section>div :first-child {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+    .Section>div :nth-child(2) {
+        font-size: 14px;
+    }
+    .bottomLists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 40px;
+    }
+    .listItems {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 8px;
+    }
+    .bottomContent .question {
+        padding: 50px 6px 30px;
+    }
+}
+@media  screen and (max-width: 550px) {
+    .topContent> :nth-child(1) {
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+    }
+    .topContent> :nth-child(2) {
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .topContent> :nth-child(3) {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 475px){
+    .searchButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+    .queBox {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin: 8px auto;
+        background-color: rgba(128, 128, 128, 0.311);
+        padding: 18px;
+        max-width: 50vw;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: small;
+    }
+    .bottomBar {
+        color: white;
+        text-align: center;
+        padding: 20px 0px 10px 20px;
+    }
+  
+}
